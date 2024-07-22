@@ -1,0 +1,21 @@
+:root {
+    --dark: #342E37;
+    --primary: #4A7856;
+    --light: #B1C1C0;
+    --secondary: #FCA17D;  
+}
+
+body {
+    background-color: var(--light);
+}
+
+.header {
+    align-items: left;
+}
+
+
+
+h2 {
+    color: #4A7856;
+}
+
