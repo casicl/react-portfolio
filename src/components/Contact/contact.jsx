@@ -2,6 +2,7 @@
 //TODO create email validation regex or whatever in utils helpers
 import {useState} from "react";
 import {validateEmail} from "../../utils/helpers.js"
+import "./contact.css"
 
 function Contact() {
     const [name, setName]=useState("");
@@ -29,17 +30,21 @@ const handleFormSubmit = (event) => {
 
     if (!validateEmail(email) || !name || message) {
         setErrorMessage("Field cannot be blank")
-    };
-    return;
-}
-setName("");
-setEmail("");
-setMessage("");
+    } else {
+        setName("");
+        setEmail("");
+        setMessage("");
+    }
+   
+};
+
 
 
 return (
-    <div className="contact-form">
-        <h2>Contact me:</h2>
+    <>
+    <h3>Contact me:</h3>
+      <div className="contact-form">
+        
         <form className="form" onSubmit={handleFormSubmit}>
             <input
             value={name}
@@ -58,9 +63,10 @@ return (
             <input
             value={message}
             name="message"
+            type= "text"
             onChange={handleInputChange}
-            type="text"
             placeholder="message"
+           
             />
             <button type="submit">Send Message</button>
         </form>
@@ -68,8 +74,13 @@ return (
             <div>
                 <p className="error-text">{errorMessage}</p>
                 </div>
+              
         )}
+   
     </div>
+    </>
+    
+
 )
 };
 export default Contact;

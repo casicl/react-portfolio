@@ -1,21 +1,90 @@
+/* whole document */
+
 :root {
-    --dark: #342E37;
+    --dark: #2F4A4C;
     --primary: #4A7856;
-    --light: #B1C1C0;
-    --secondary: #FCA17D;  
+    --light: #C1D7CD;
+    --secondary: #FF9470;  
 }
 
 body {
     background-color: var(--light);
+    
 }
+
+/* header container */
 
 .header {
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: left;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+}
+
+h2 {
+    color: var(dark);
+    margin-left: 25px;
+    margin-top: 5px;
+    z-index: 2;
+    position: fixed;
+    z-index: 2;
+
 }
 
 
 
-h2 {
+
+.header-img {
+    opacity: 50%;
+    overflow: hidden;
+}
+/* nav bar  */
+
+.nav {
+    
+    position: relative;
+    z-index: 3;
+   
+   
+}
+
+.nav-list {
+    list-style-type: none;
+    position: fixed;
+    
+    
+
+}
+ 
+li {
+    display: inline;
+    float: left;
+    padding: 10px;
+    font-size:large;
+    
+    
+  
+}
+
+a {
+    color:#FCA17D;
+}
+
+/* contact form */
+
+h3 {
+    margin-left: 25px;
     color: #4A7856;
+}
+
+.form {
+    margin-top: 75px;
+    margin-left: 25px;
+
 }
 

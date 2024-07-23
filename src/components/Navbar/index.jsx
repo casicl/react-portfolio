@@ -1,16 +1,16 @@
-//do the links need to be href because they are on the page??
+//is this how the links should work?
 //FIX ARRAY
-import "./index.css";
+
 
 import { Link } from "react-router-dom";
 
 
-const AppNavbar = () => {
-  // const ["about", "portfolio", "contact", "resume"];
+const Nav = () => {
+  const links =["about", "portfolio", "contact", "resume"];
   return (
     <nav className="nav">
       <div className="nav-items">
-        <ul>
+        <ul className="nav-list">
           <li>
             <Link to="/">About Me</Link>
           </li>
@@ -29,4 +29,4 @@ const AppNavbar = () => {
    </nav>
   );
 };
-export default AppNavbar;
+export default Nav;

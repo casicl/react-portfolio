@@ -3,6 +3,7 @@ import Header from "./components/Header/header.jsx";
 import Nav from "./components/Navbar/index.jsx";
 import About from "./components/About/index.jsx";
 import Footer from "./components/Footer/footer.jsx";
+import { Outlet } from "react-router-dom";
 
 function App() {
     
@@ -11,9 +12,9 @@ function App() {
             <Header>
                 <Nav/>
             </Header>
-        <div className="about-me">
-            <About/>
-        </div>
+        
+            <Outlet/>
+        
         <Footer/>
         </div>
     );
