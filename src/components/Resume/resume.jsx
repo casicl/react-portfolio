@@ -8,7 +8,7 @@ function Resume() {
         };
         return (
         <div className="resume">
-            <p>Download my resume here:
+            <p>Download my resume here: 
                 <button onClick={onButtonClick}>Download PDF</button>
             </p>
         </div>

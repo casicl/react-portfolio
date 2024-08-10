@@ -49,7 +49,7 @@ h2 {
     
     position: relative;
     z-index: 3;
-   
+   vertical-align: bottom;
    
 }
 
@@ -85,6 +85,14 @@ h3 {
 .form {
     margin-top: 75px;
     margin-left: 25px;
+    width: 60%;
 
 }
+
+input {
+    width: 600px;
+    
+}
+
+/* portfolio page */
 

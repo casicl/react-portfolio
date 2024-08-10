@@ -60,15 +60,19 @@ return (
             type="email"
             placeholder="email"
             />
-            <input
+            <textarea
             value={message}
             name="message"
+            rows="10"
+            cols="83"
             type= "text"
             onChange={handleInputChange}
             placeholder="message"
+            
+            
            
             />
-            <button type="submit">Send Message</button>
+            <button type="submit" style={{ display: 'flex', justifyContent: 'flex-end' }} >Send Message</button>
         </form>
         {errorMessage && (
             <div>
