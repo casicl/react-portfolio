@@ -4,12 +4,15 @@ function Header(props) {
     return (   
         
 <header className="header">
+<img className="header-img" src={backgroundImage}></img>
+<h2>Casi Clarkson</h2>
+{props.children}
 
-    <h2>Casi Clarkson</h2>
-    {props.children}
-    <img className="header-img" src={backgroundImage}></img>
-    
-    
+
+
+
+
+
 
 </header>
 

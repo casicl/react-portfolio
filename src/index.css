@@ -17,46 +17,53 @@ body {
 .header {
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: left;
+    position: relative;
+    text-align: center;
     height: 300px;
     width: 100%;
-    position: relative;
     overflow: hidden;
     z-index: 1;
     margin: 0;
 }
-
-h2 {
-    color: var(dark);
-    margin-left: 25px;
-    margin-top: 5px;
-    z-index: 2;
-    position: fixed;
-    z-index: 2;
-
-}
-
-
-
-
 .header-img {
     opacity: 50%;
     overflow: hidden;
 }
+
+h2 {
+    color: var(dark);
+    top: 8px;
+    left: 25px;
+   
+    position: fixed;
+    z-index: 2;
+     
+
+}
+
+
+
 /* nav bar  */
 
 .nav {
-    
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
-   vertical-align: bottom;
+
+
+   
+    
    
 }
 
 .nav-list {
     list-style-type: none;
-    position: fixed;
-    
+    position: relative;
+
     
 
 }
@@ -65,7 +72,7 @@ li {
     display: inline;
     float: left;
     padding: 10px;
-    font-size:large;
+    font-size: x-large;
     
     
   
