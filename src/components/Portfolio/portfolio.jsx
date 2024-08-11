@@ -1,53 +1,57 @@
-import {useState} from "react";
-import wildsideImg from "../../assets/wildside.png"
+import wildsideImg from "../../assets/wildside.jpg";
+import happyPawsImg from "../../assets/happypaws.jpg";
+import hairportImg from "../../assets/hairport.jpg"
+import gitImg from "../../assets/github-mark-sm.png"
+import "../Portfolio/portfolio.css";
+import { useState } from "react";
+import {Link} from "react-router-dom"
 
 function Portfolio() {
-const [projects] = useState([
-    {   name: "Wildside Events",
-        image: {wildsideImg},
-        link: "https://casicl.github.io/Wildside-Events/",
-        gitHub: "https://github.com/casicl/Wildside-Events"
-    },
-    {   name: "Happy Paws",
-        image: {happyPawsImg},
-        link: "https://happypaws-0ccbfdf6880b.herokuapp.com",
-        gitHub: "https://github.com/casicl/happy-paws"
+  const [projects] = useState([
+    {
+      name: "Wildside Events",
+      image: wildsideImg,
+      link: "https://casicl.github.io/Wildside-Events/",
+      gitHub: "https://github.com/casicl/Wildside-Events",
     },
     {
-        name: "Hairport",
-        image: {hairportImg},
-        link: "https://hairport-39pg.onrender.com",
-        gitHub: "https://github.com/casicl/Hairport"
-    }
-]);
+      name: "Happy Paws",
+      image: happyPawsImg,
+      link: "https://happypaws-0ccbfdf6880b.herokuapp.com",
+      gitHub: "https://github.com/casicl/happy-paws",
+    },
+    {
+      name: "Hairport",
+      image: hairportImg,
+      link: "https://hairport-39pg.onrender.com",
+      gitHub: "https://github.com/casicl/Hairport",
+    },
+  ]);
 
-
-    return (
-       <div>
-        <div className="flex-row">
-            {projects.map((project, idx)=> (
-                <div className="project" key={project.name}>
-                    <img src={project.image}
-                    className="project-background"/>
-                   
+  return (
+    <div>
+      <div className="flex-row">
+        {projects.map((project) => (
+          <div className="project" key={project.name}>
+            <img src={project.image} className="project-background" />
 
             <div className="project-name">
-                <h2>{project.name}</h2>        
-                </div>
-            <div className="project-link">
-               <a href={project.link}></a>  
-            </div>    
-            <div className="project-git">
-                <a href={project.gitHub}></a>
-                </div>
+              
+              <Link to={project.link}><h4>{project.name}</h4></Link>
+              
             </div>
-
-            ))}
-        </div>
-     </div>)
-
-
-        }
-
+       
+            <div className="project-git">
+            <Link to={project.gitHub}>
+              <img src={gitImg}></img>
+              </Link>
+              
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default Portfolio;

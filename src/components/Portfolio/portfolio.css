@@ -1,0 +1,21 @@
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.project-background {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.project-name {
+    
+    margin-left: 5px;
+}
+
+.h5 {
+    color: #4A7856;
+}

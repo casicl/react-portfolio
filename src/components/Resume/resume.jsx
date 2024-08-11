@@ -11,6 +11,8 @@ function Resume() {
             <p>Download my resume here: 
                 <button onClick={onButtonClick}>Download PDF</button>
             </p>
+
+            <h4></h4>
         </div>
     )
 }
