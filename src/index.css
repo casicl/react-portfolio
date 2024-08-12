@@ -1,0 +1,165 @@
+/* whole document */
+
+:root {
+    --dark: #2F4A4C;
+    --primary: #4A7856;
+    --light: #C1D7CD;
+    --secondary: #FF9470;  
+}
+
+body {
+    background-color: var(--light);
+    
+}
+
+/* header container */
+
+.header {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+}
+.header-img {
+    opacity: 50%;
+    overflow: hidden;
+}
+
+h2 {
+    color: var(dark);
+    top: 8px;
+    left: 25px;
+   
+    position: fixed;
+    z-index: 2;
+     
+
+}
+
+
+
+/* nav bar  */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+
+   
+    
+   
+}
+
+.nav-list {
+    list-style-type: none;
+    position: relative;
+
+    
+
+}
+ 
+li {
+    display: inline;
+    float: left;
+    padding: 10px;
+    font-size: x-large;
+    
+    
+  
+}
+
+a {
+    color:#FCA17D;
+}
+
+/* contact form */
+
+h3 {
+    margin-left: 25px;
+    color: #4A7856;
+}
+
+.form {
+    margin-top: 75px;
+    margin-left: 25px;
+    width: 60%;
+
+}
+
+input {
+    width: 600px;
+    
+}
+
+/* portfolio page */
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.project-background {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.project-name {
+    color: #4A7856;
+}
+
+button {
+    margin-left: 25px;
+}
+
+.skills-list {
+   
+    display: flex;
+    flex-direction: column;
+    color:#2F4A4C
+
+}
+
+@media only screen and (max-width: 1300px) {
+    nav {
+      position: static;
+      display: block;
+      z-index: 100;
+      margin: 0 10px;
+      font-size: 2rem;
+    }
+    header h2 {
+      display: block;
+      height: 30px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    nav {
+      position: static;
+      display: block;
+      z-index: 100;
+      margin: 0 10px;
+      font-size: 1.3rem;
+    }
+    header h2 {
+      display: block;
+      margin: 5px 10px;
+      height: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 2.3rem;
+    }
+  }
+  

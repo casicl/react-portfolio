@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    margin-left: 50px;
+   
+
+}
+
+.imageGit {
+    margin: 10px;
+
+}
+
+.imageLinkIn {
+    margin: 10px;
+}
