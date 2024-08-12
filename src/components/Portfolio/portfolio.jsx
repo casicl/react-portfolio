@@ -1,12 +1,18 @@
 import wildsideImg from "../../assets/wildside.jpg";
 import happyPawsImg from "../../assets/happypaws.jpg";
-import hairportImg from "../../assets/hairport.jpg"
-import gitImg from "../../assets/github-mark-sm.png"
+import hairportImg from "../../assets/hairport.jpg";
+import bookSearchImg from "../../assets/booksearch.jpg";
+import notetakerImg from "../../assets/notetaker.png";
+import workDayImg from "../../assets/workdayscheduler.jpg";
+import gitImg from "../../assets/github-mark-sm.png";
 import "../Portfolio/portfolio.css";
 import { useState } from "react";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import {motion} from "framer-motion"
 
 function Portfolio() {
+  console.log(motion);
+  const [flip, setFlip] = useState(true);
   const [projects] = useState([
     {
       name: "Wildside Events",
@@ -26,9 +32,33 @@ function Portfolio() {
       link: "https://hairport-39pg.onrender.com",
       gitHub: "https://github.com/casicl/Hairport",
     },
+    {
+      name: "Google Book Search",
+      image: bookSearchImg,
+      link: "https://casi-book-search-b28137c233e5.herokuapp.com/",
+      gitHub: "https://github.com/casicl/book-search",
+    },
+
+    {
+      name: "Notetaker App",
+      image: notetakerImg,
+      link: "https://notetaker-app-for-nerds-2f44691a84f9.herokuapp.com/",
+      gitHub: "https://github.com/casicl/notetaker-app",
+    },
+    {
+      name: "Work Day Scheduler",
+      image: workDayImg,
+      link: "https://casicl.github.io/work-day-scheduler/",
+      gitHub: "https://github.com/casicl/work-day-scheduler",
+    },
+
   ]);
 
   return (
+    // <motion.div
+    // whileHover={{
+    //   opacity: 0 }}
+    //   >
     <div>
       <div className="flex-row">
         {projects.map((project) => (
@@ -51,6 +81,7 @@ function Portfolio() {
         ))}
       </div>
     </div>
+    // </motion.div>
   );
 }
 

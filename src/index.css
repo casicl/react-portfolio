@@ -119,3 +119,15 @@ input {
 .project-name {
     color: #4A7856;
 }
+
+button {
+    margin-left: 25px;
+}
+
+.skills-list {
+   
+    display: flex;
+    flex-direction: column;
+    color:#2F4A4C
+
+}

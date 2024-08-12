@@ -1,5 +1,7 @@
 //where to put resume
 //i dont have a resume
+import "./resume.css";
+
 function Resume() {
   
         const onButtonClick = () => {
@@ -7,12 +9,27 @@ function Resume() {
 
         };
         return (
+            <div>
         <div className="resume">
-            <p>Download my resume here: 
-                <button onClick={onButtonClick}>Download PDF</button>
+            <p><h3>Download my resume here:</h3> <a href="https://profile.indeed.com/resume" ><button onClick={onButtonClick}>Download PDF</button></a>
+                
             </p>
+        </div>
+        <h3>Skills:</h3>
+        <div>
+            <ul className="skills-list">
+                
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>MongoDB</li>
 
-            <h4></h4>
+
+            </ul>
+
+        </div>
         </div>
     )
 }
