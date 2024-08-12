@@ -1,7 +1,7 @@
 .flex-row {
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
+    margin: 10px;
 }
 
 .project-background {
@@ -9,9 +9,21 @@
     width: 300px;
     height: 300px;
     margin: 5px;
+    
 }
 
 .project-name {
+    opacity: 100% ;
+    
+}
+
+.project-background:hover {
+    transition: all .5s ease-in-out;
+    opacity: 50%;
+    border: 10px solid #2F4A4C;
+}
+
+.project-image {
     
     margin-left: 5px;
     
