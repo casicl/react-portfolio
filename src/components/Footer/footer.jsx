@@ -9,15 +9,15 @@ function Footer() {
 
     return (
         <footer className="footer">
-            <div className="imageGit"> <Link to="https://github.com/casicl">
+            <div className="imageGit"> <Link to="https://github.com/casicl" target="_blank">
             <img src={gitHubLogo}></img></Link>
             </div>
 
-            <div className="imageLinkIn"> <Link to="https://www.linkedin.com/in/casi-clarkson-875350b2/">
+            <div className="imageLinkIn"> <Link to="https://www.linkedin.com/in/casi-clarkson-875350b2/" target="_blank">
             <img src={linkedinLogo}></img>
             </Link></div>
 
-            <div className="xLogo"> <Link to="https://x.com/casiclarkson"><img src={xLogo}></img></Link></div>
+            <div className="xLogo"> <Link to="https://x.com/casiclarkson" target="_blank"><img src={xLogo}></img></Link></div>
         </footer>
     )
 

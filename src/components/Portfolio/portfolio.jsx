@@ -55,10 +55,7 @@ function Portfolio() {
   ]);
 
   return (
-    // <motion.div
-    // whileHover={{
-    //   opacity: 0 }}
-    //   >
+   
     <div>
       <div className="flex-row">
         {projects.map((project) => (
@@ -67,12 +64,12 @@ function Portfolio() {
 
             <div className="project-name">
               
-              <Link to={project.link}><h4>{project.name}</h4></Link>
+              <Link to={project.link} target="_blank" ><h4>{project.name}</h4></Link>
               
             </div>
        
             <div className="project-git">
-            <Link to={project.gitHub}>
+            <Link to={project.gitHub} target="_blank">
               <img src={gitImg}></img>
               </Link>
               
@@ -81,8 +78,10 @@ function Portfolio() {
         ))}
       </div>
     </div>
-    // </motion.div>
+ 
   );
+
+  
 }
 
 export default Portfolio;

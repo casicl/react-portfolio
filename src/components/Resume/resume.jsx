@@ -11,7 +11,7 @@ function Resume() {
         return (
             <div>
         <div className="resume">
-            <p><h3>Download my resume here:</h3> <a href="https://profile.indeed.com/resume" ><button onClick={onButtonClick}>Download PDF</button></a>
+            <p><h3>Download my resume here:</h3> <a href="https://profile.indeed.com/resume" target="_blank"><button onClick={onButtonClick}>Download PDF</button></a>
                 
             </p>
         </div>
